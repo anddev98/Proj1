@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Proj1</string>
+    <string name="app_name">Task App</string>
+    <string name="First">First quarter</string>
+    <string name="one">ONE</string>
+    <string name="two">TWO</string>
+    <string name="three">THRE</string>
+    <string name="second">Second quarter</string>
+    <string name="four">FOUR</string>
+    <string name="five">FIVE</string>
 </resources>

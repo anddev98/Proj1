@@ -2,8 +2,12 @@ package com.sematec.proj1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,9 +17,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.d("TAG","onCreate has happened");
+        Button btnsave=findViewById(R.id.btnSave);
+        //Log.d("TAG","onCreate has happened");
+        btnsave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://example.com"));
+                startActivity(intent);
+
+            }
+        });
     }
-    @Override
+
+    /*@Override
     protected void onStart(){
         super.onStart();
         Log.d("TAG","onStart has happened");
@@ -44,6 +58,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestart(){
         super.onRestart();
         Log.d("TAG","onRestart has happened");
-    }
+    }*/
 
 }

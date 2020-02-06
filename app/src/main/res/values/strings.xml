@@ -7,4 +7,6 @@
     <string name="second">Second quarter</string>
     <string name="four">FOUR</string>
     <string name="five">FIVE</string>
+    <string name="enter_phone">شماره تلفن را وارد نمایید</string>
+    <string name="btn_call">تماس</string>
 </resources>

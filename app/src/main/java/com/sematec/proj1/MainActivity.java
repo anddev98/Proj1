@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,13 +19,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btnsave=findViewById(R.id.btnSave);
+        Button btnSave=findViewById(R.id.btnSave);
+        final EditText edtAge = findViewById(R.id.edtAge);
         //Log.d("TAG","onCreate has happened");
-        btnsave.setOnClickListener(new View.OnClickListener() {
+        btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://example.com"));
+                /* Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://example.com"));
+                   startActivity(intent);*/
+                String age = edtAge.getText().toString();
+                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+                intent.putExtra("AGE",age);
                 startActivity(intent);
+                /*Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+                startActivity(intent);*/
+
+                //Toast.makeText(MainActivity.this,"Sample Toast",Toast.LENGTH_LONG).show();
 
             }
         });

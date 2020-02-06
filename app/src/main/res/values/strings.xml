@@ -9,4 +9,7 @@
     <string name="five">FIVE</string>
     <string name="enter_phone">شماره تلفن را وارد نمایید</string>
     <string name="btn_call">تماس</string>
+    <string name="save">save</string>
+    <string name="drawer_menu">This is Drawer Menu</string>
+    <string name="show_menu">Show Menu</string>
 </resources>

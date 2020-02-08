@@ -11,17 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TaskDrawerMenuActivity">
+        <activity android:name=".TaskProfileSec4Activity"></activity>
+        <activity android:name=".TaskLastSec4Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TestDrawerActivity">
-
-        </activity>
-        <activity android:name=".TestSharedPreferencesActivity"></activity>
+        <activity android:name=".TestRecyclerViewActivity" />
+        <activity android:name=".TaskLastActivity" />
+        <activity android:name=".TestAlertDialogActivity"></activity>
+        <activity android:name=".TestMenuAvtivity" />
+        <activity android:name=".TaskDrawerMenuActivity" />
+        <activity android:name=".TestDrawerActivity" />
+        <activity android:name=".TestSharedPreferencesActivity" />
         <activity android:name=".TaskImplicitIntentActivity" />
         <activity android:name=".TestImplicitIntentActivity" />
         <activity android:name=".SecondActivity" />

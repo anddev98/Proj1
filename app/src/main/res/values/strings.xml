@@ -12,4 +12,6 @@
     <string name="save">save</string>
     <string name="drawer_menu">This is Drawer Menu</string>
     <string name="show_menu">Show Menu</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="phone_call">Phone Call</string>
 </resources>

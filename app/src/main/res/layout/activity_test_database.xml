@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestDatabaseActivity">
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/edtFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Family"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/edtGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Grade"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"/>
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Names"/>
+
+</LinearLayout>

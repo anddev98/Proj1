@@ -3,6 +3,7 @@
     package="com.sematec.proj1">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,17 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TaskSec5Activity">
+        <activity android:name=".TestDatabaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TaskProfileSec4Activity" />
-        <activity android:name=".TaskLastSec4Activity">
+        <activity android:name=".TaskSec6DetailesActivity" />
+        <activity android:name=".TaskSec6RecyclerViewActivity" />
+        <activity android:name=".TaskSec6Activity">
 
         </activity>
+        <activity android:name=".TestAsyncHttpActivity"></activity>
+        <activity android:name=".TestHttpClientActivity" />
+        <activity android:name=".TestThreadActivity" />
+        <activity android:name=".TaskSec5Activity" />
+        <activity android:name=".TaskProfileSec4Activity" />
+        <activity android:name=".TaskLastSec4Activity" />
         <activity android:name=".TestRecyclerViewActivity" />
         <activity android:name=".TaskLastActivity" />
         <activity android:name=".TestAlertDialogActivity" />
